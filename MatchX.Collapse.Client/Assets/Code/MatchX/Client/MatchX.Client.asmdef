@@ -1,0 +1,28 @@
+{
+    "name": "MatchX.Client",
+    "rootNamespace": "",
+    "references": [
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:edc0788258e584f5a9e1ec27078023aa",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:38b812d10026d4c3782e92d053079697",
+        "GUID:5f3cf485eb0554709a8abbeace890c86",
+        "GUID:3506c7e8282d84ee49c3a64f20ad82e5",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:a5baed0c9693541a5bd947d336ec7659",
+        "GUID:2b4e76f17cc4b4ed5805c6d971ebf11e",
+        "GUID:a6d964beaf87340268c61d78e9feb12f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
