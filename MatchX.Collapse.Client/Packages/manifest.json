@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.nakuru.entities.hybrid.presentation": "https://github.com/nakuru-labs/nakuru.entities.hybrid.presentation.git",
-    "com.nakuru.matchx.engine": "https://github.com/nakuru-labs/nakuru.matchx.engine.git",
+    "com.nakuru.matchx.engine": "https://github.com/nakuru-labs/nakuru.matchx.engine.git#v1.0.0",
     "com.nakuru.unity.ecs.utilities": "https://github.com/Darkwing-Duck/unity-ecs-utilities.git",
     "com.unity.addressables": "1.21.20",
     "com.unity.collab-proxy": "2.2.0",

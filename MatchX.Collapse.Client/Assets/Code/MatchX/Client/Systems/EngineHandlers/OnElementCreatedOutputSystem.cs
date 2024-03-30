@@ -23,17 +23,23 @@ namespace MatchX.Client
 		{
 			var ecb = new EntityCommandBuffer(Allocator.Temp);
 			
-			foreach (var (idRo, positionRo, entity) in SystemAPI.Query<RefRO<Element.Id>, RefRO<Board.Position>>()
+			foreach (var (idRo, positionRo, sizeRo, entity) in SystemAPI.Query<RefRO<Element.Id>, RefRO<Board.Position>, RefRO<Element.Size>>()
 			                                      .WithAll<EngineOutput.ElementCreated>()
 			                                      .WithEntityAccess()) {
 				ecb.AddComponent<ReadyToDestroy>(entity);
 
 				var boardEntity = SystemAPI.GetSingletonEntity<Board.Tag>();
 
+				var viewPath = "Blocks/P_Block_Green.prefab";
+
+				if (sizeRo.ValueRO.Value.Equals(new uint2(2, 2))) {
+					viewPath = "Blocks/P_Block_Blue_2x2.prefab";
+				}
+
 				var factory = new ViewElement.Factory();
 				factory.Create(ecb)
 				       .WithName($"Element<{idRo.ValueRO.Value}>")
-				       .WithGameObjectFromAddressables("Blocks/P_Block_Green.prefab")
+				       .WithGameObjectFromAddressables(viewPath)
 				       .WithPosition(new float3(positionRo.ValueRO.Value.xy, 0f))
 				       .WithParent(boardEntity)
 				       .WithComponent<Element.Tag>()
