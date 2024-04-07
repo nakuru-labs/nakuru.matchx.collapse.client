@@ -35,6 +35,10 @@ namespace MatchX.Client
 				if (sizeRo.ValueRO.Value.Equals(new uint2(2, 2))) {
 					viewPath = "Blocks/P_Block_Blue_2x2.prefab";
 				}
+				
+				if (sizeRo.ValueRO.Value.Equals(new uint2(3, 3))) {
+					viewPath = "Blocks/P_Block_Orange_3x3.prefab";
+				}
 
 				var factory = new ViewElement.Factory();
 				factory.Create(ecb)

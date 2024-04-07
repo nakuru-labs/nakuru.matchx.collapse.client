@@ -17,7 +17,7 @@
       "dependencies": {
         "com.unity.entities": "1.0.16"
       },
-      "hash": "586a89b12388916dffe2a91a775b5236343f2766"
+      "hash": "18fb3049c9b1421cdf28bb19dd87d094fd67ea2a"
     },
     "com.nakuru.unity.ecs.utilities": {
       "version": "https://github.com/Darkwing-Duck/unity-ecs-utilities.git",
